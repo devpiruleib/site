@@ -29,7 +29,7 @@ body, html {
     width: 90%;
     max-width: 800px;
     min-height: 500px;
-    background-color: white;
+    background-color: white !important;
     border-radius: 10px;
     padding: 20px;
 }
@@ -37,9 +37,12 @@ body, html {
 .pcima, .pbaixo {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     gap: 20px;
     text-align: center;
+    width: 100%;
+    border: none;
+    background-color: white;
 }
 
 .imagem1, .imagem2, .texto1, .texto2 {
@@ -104,6 +107,13 @@ a {
         width: 100%;
         margin-top: 20px;
         padding: 15px;
+        background-color: white !important;
+    }
+
+    .pcima, .pbaixo {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 
     .imagem1, .imagem2, .texto1, .texto2 {
