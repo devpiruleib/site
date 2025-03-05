@@ -1,0 +1,151 @@
+@font-face{
+    font-family: homevideo;
+    src: url('fonte/HomeVideo-BLG6G.ttf')
+}
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: black;
+    font-family: homevideo;
+    min-height: 100px;
+}
+
+body, html {
+    height: 100%;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh; /* faz a altura da tela ser 100% da altura da janela */
+    
+}
+
+.fundo {
+    margin-top: 450px;
+    width: 50%;
+    min-height: 500px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.pcima{
+    height: 250px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+}
+
+.pbaixo{
+    height: 250px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+}
+
+
+.imagem1{
+    width: 50%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.texto1 {
+    width: 50%;
+    height: 250px;
+    display: flex;
+    margin-right: 60px;
+    align-items: center;
+}
+
+
+p{
+    border-width: 10px;
+    flex-direction: row;
+    font-size: 20px;
+}
+
+.imagem2{
+    width: 50%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.texto2{
+    width: 50%;
+    height: 250px;
+    display: flex;
+    margin-left: 60px;
+    align-items: center;
+}
+
+.imagem1, .texto1, .imagem2, .texto2{
+    background-color: white;
+    border-radius: 10px;
+}
+
+p{
+    background-color: transparent;
+}
+
+#imagemdoyonlu{
+    height: 200px;
+    filter: grayscale(100%);
+    transition: 0.3s;
+}
+
+img{
+    border-radius: 10px;
+    filter: grayscale(100%);
+    transition: 0.3s;
+}
+
+img:hover, #imagemdoyonlu:hover{
+    filter: grayscale(0%)
+}
+
+.bemvindo{
+    color: white;
+    font-size: 30px;
+    margin-top: 60px;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+button{
+    background-color: white;
+    color: black;
+    font-size: 30px;
+    border: transparent;
+    transition: 0.5s;
+}
+
+button:hover{
+    background-color: black;
+    color: white;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+.fundodeverdade{
+    position: absolute;
+    z-index: -1;
+}

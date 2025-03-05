@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="formulario">
+        <form>
+            <label for="txtNome">nome</label>
+            <input type="text" name="txtNome" id="txtNome1">
+        </form>
+        <button onclick="identificador()">testar</button>
+        <p id="resposta"></p>
+        <img src="img/acf1408ea69d1e0c4bf626a19b2dae9d.jpg" alt="">
+    </div>
+
+    <script>
+        function identificador(){
+            var str = document.getElementById('txtNome1').value 
+            if(str.includes("r")){
+                document.getElementById("resposta").innerHTML = "não..."
+            }else{
+                document.getElementById("resposta").innerHTML = "sim!!!"
+            }
+        }
+    </script>
+</body>
+</html>
