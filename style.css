@@ -7,7 +7,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    background-color: black;
+    background-color: rgb(22, 22, 44);
     font-family: homevideo;
 }
 
@@ -62,7 +62,7 @@ p {
     background-color: transparent;
 }
 
-img {
+.imagemdoyonlu{
     max-width: 100%;
     height: auto;
     border-radius: 10px;
@@ -70,7 +70,7 @@ img {
     transition: 0.3s;
 }
 
-img:hover {
+.imagemdoyonlu:hover {
     filter: grayscale(0%);
 }
 
@@ -82,8 +82,8 @@ img:hover {
 }
 
 button {
-    background-color: white;
-    color: black;
+    background-color: rgb(39, 39, 83);
+    color: white;
     font-size: 20px;
     border: none;
     padding: 10px 20px;
@@ -93,8 +93,7 @@ button {
 }
 
 button:hover {
-    background-color: black;
-    color: white;
+    background-color: rgb(41, 41, 71);
 }
 
 a {
