@@ -1,0 +1,68 @@
+<html>
+   <head>
+       <title>Especial dia das mulheres</title>
+   </head>
+   <body>
+       <div class="container">
+       <h1>Feliz dia da mulher!</h1>
+       <button type="submit" onclick="exibirMensagem()">Clique para receber uma mensagem</button>
+       <p id="mensagem"></p>
+       </div>
+   </body>
+</html>
+
+
+<!-- CSS codes -->
+<style>
+*{
+   font-size: 50px;
+}
+html {
+   background: linear-gradient(to right, pink 0%, lightpink 100%);
+}
+h1, p{
+   color: white;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: deeppink;
+    border-radius: 10px;
+}
+
+button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hotpink;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: hotpink;
+    color: white;
+}
+
+</style>
+
+<!-- Javascript codes -->
+<script>
+function exibirMensagem() {
+    const mensagens = [
+        "Você é incrível!",
+        "Você é guerreira!",
+        "Nunca deixe seu brilho ofuscar!",
+        "Você move o mundo!",
+        "Continue sendo batalhadora!"
+    ];
+
+            // Escolhe uma mensagem aleatória
+            const mensagemAleatoria = mensagens[Math.floor(Math.random() * mensagens.length)];
+
+            // Exibe no elemento com ID "mensagem"
+            document.getElementById("mensagem").innerText = mensagemAleatoria;
+        }
+
+</script>
