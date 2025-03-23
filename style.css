@@ -132,3 +132,19 @@ a {
         padding: 8px 16px;
     }
 }
+
+h1{
+    color: white;
+}
+
+.contato{
+    font-size: 24px;
+}
+
+.botoes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
