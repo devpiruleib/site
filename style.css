@@ -148,3 +148,7 @@ h1{
     flex-direction: column;
     gap: 30px;
 }
+
+a{
+    background-color: rgba(2,2,2, 0);
+}
