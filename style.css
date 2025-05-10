@@ -14,6 +14,7 @@
 body, html {
     height: 100%;
     width: 100%;
+    scroll-behavior: smooth;
 }
 
 #container {
@@ -25,16 +26,16 @@ body, html {
 }
 
 .fundo {
-    margin-top: 50px;
+    margin-top: 120px;
     width: 90%;
     max-width: 800px;
-    min-height: 500px;
+    min-height: 100px;
     background-color: white !important;
     border-radius: 10px;
     padding: 20px;
 }
 
-.pcima, .pbaixo {
+.sobre {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -45,7 +46,7 @@ body, html {
     background-color: white;
 }
 
-.imagem1, .imagem2, .texto1, .texto2 {
+.imagem1, .texto1{
     flex: 1 1 300px;
     max-width: 100%;
     display: flex;
@@ -57,8 +58,11 @@ body, html {
     padding: 10px;
 }
 
+#texto{
+    color: black !important;
+}
 p {
-    font-size: 18px;
+    font-size: 23px;
     background-color: transparent;
 }
 
@@ -77,7 +81,6 @@ p {
 .bemvindo {
     color: white;
     font-size: 24px;
-    text-align: center;
     padding: 20px;
 }
 
@@ -102,21 +105,35 @@ a {
 }
 
 @media (max-width: 768px) {
+    body, html {
+        overflow-x: hidden;
+    }
+
     .fundo {
         width: 100%;
         margin-top: 20px;
         padding: 15px;
-        background-color: white !important;
     }
 
-    .pcima, .pbaixo {
+    .pcima, .pbaixo,
+    .centro,
+    .portfolio,
+    .botoes {
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        text-align: center;
     }
 
     .imagem1, .imagem2, .texto1, .texto2 {
         flex: 1 1 100%;
+        padding: 10px;
+    }
+
+    .linguagens {
+        flex-direction: column;
+        font-size: 60px;
+        gap: 20px;
     }
 
     p {
@@ -125,13 +142,40 @@ a {
 
     .bemvindo {
         font-size: 20px;
+        padding: 15px;
     }
 
     button {
         font-size: 18px;
         padding: 8px 16px;
     }
+
+    .contato {
+        font-size: 20px;
+    }
+
+    .redesocial {
+        font-size: 35px;
+    }
+
+    #rede {
+        font-size: 20px;
+    }
+
+    .navigator,
+    .navbar,
+    .container-fluid {
+        height: auto;
+        padding: 10px;
+    }
+
+    .portfolio {
+        font-size: 24px;
+        height: auto;
+        padding: 10px;
+    }
 }
+
 
 h1{
     color: white;
@@ -151,4 +195,150 @@ h1{
 
 a{
     background-color: rgba(2,2,2, 0);
+}
+
+.navigator{
+    width: 100%;
+    position: fixed;
+    height: 100px;
+    z-index: 4;
+}
+
+#bemvindo{
+    border-width: 10px;
+    border-left-color: white;
+    border-left-style: solid;
+
+}
+
+.centro{
+    min-height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 50px;
+    background-color: rgb(17, 17, 36)
+}
+
+
+
+h1{
+    color: white !important;
+    background-color: transparent;
+}
+
+i{
+    background-color: transparent;
+}
+
+ul{
+    color: white !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent !important;
+}
+
+#html, #css, #js, #php, #csharp{
+    transition: 0.5s;
+}
+
+#html:hover{
+    color: #e44d25;
+}
+
+#css:hover{
+    color: rebeccapurple;
+}
+
+#js:hover{
+    color: #f7de1f;
+}
+
+#php:hover{
+    color: #8b93bb;
+}
+
+#csharp:hover{
+    color: #502ad4;
+}
+
+.linguagens{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    font-size: 90px;
+    gap: 30px;
+}
+
+li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: transparent;
+}
+
+#centro, p{
+    color: white !important;
+}
+
+.navbar{
+    height: 100px;
+    border-bottom: 10px;
+    background-color: transparent;
+}
+
+.container-fluid{
+    background-color: transparent;
+    border-bottom-width: 10px;
+    border-bottom-color: white;
+}
+
+.navigator{
+    background-color: rgb(34, 34, 68);
+}
+
+.nav-item{
+    background-color: rgb(34, 34, 68);;
+}
+
+.portfolio{
+    background-color: rgb(39, 39, 83);
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+}
+
+#sobremim,
+#linguagens,
+#contato,
+#projetos,
+#bemvindo,
+#quemsou {
+    scroll-margin-top: 120px; /* maior ou igual à altura da navbar */
+}
+
+.dropdown-menu:hover{
+    background-color: black;
+}
+
+#projetos{
+    transition: 0.3s;
+}
+
+.redesocial{
+    font-size: 50px;
+}
+
+#rede{
+    font-size: 25px;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
 }

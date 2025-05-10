@@ -1,67 +1,145 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>piruleib's basement!!</title>
     <link rel="stylesheet" href="style.css">
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
-  <link rel="icon" href="icon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="icon.ico" type="image/x-icon" />
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
 
 </head>
-<body>      
-    <div id="container" class="animate__animated animate__fadeIn">
-        <div class="fundodeverdade">
-            <img src="imagens/fundo.png" alt="">
-        </div>
-        <div class="fundo">
-            <div class="pcima">
-                <div class="imagem1">
-                    <a href="https://pt.wikipedia.org/wiki/Yo%C3%B1lu" target="_blank"><img src="imagens/yonlu.jpg" class="imagemdoyonlu" alt=""></a>
-                </div>
-                <div class="texto1">
-                    <p>Oi, sou Gabriel. Pode me chamar pelo meu nick piruleib ou por um de meus apelidos do nome (briel, biel, etc). Eu sou um adolescente de 16 anos que cursa o 2º ano do Ensino Médio. Amo programação e planejo seguir a área de Ciência da Computação.</p>
-                </div>
-            </div>
-            <div class="pbaixo">
-                <div class="texto2">
-                    <p>Sou um grande fã de música. Em especial, do Yoñlu. As músicas dele conseguem me tirar da tristeza, mesmo que por alguns minutos.</p>
-                </div>
-                <div class="imagem2">
-                    <a href="https://pt.wikipedia.org/wiki/Yo%C3%B1lu" target="_blank"><img src="imagens/yonlu2.jpg" class="imagemdoyonlu" alt=""></a>
-                </div>
-            </div>
-        </div>
-        <div class="bemvindo">
-            <h1>Seja bem-vindo ao meu site!</h1>
-            <p>No meu cantinho, eu armazeno meus projetos escolares ou pessoais mesmo. Fique à vontade para explorá-los! ^-^</p>
-        </div>
 
-        <div class="botoes">
-            <button onclick="paginadocebolinha()">Descubra se o Cebolinha conseguiria pronunciar seu nome! (Meu primeiro projeto com JavaScript)</button>
-            <button onclick="pensamentos()">Cantinho do pensamento</button>
+<body class="animate__animated animate__fadeIn">
+    <div class="navigator">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#" style="color: white;">DEVPIRULEIB</a>
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#sobremim"
+                                    style="color: white;">SOBRE
+                                    MIM</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#linguagens" style="color: white;">LINGUAGENS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contato" style="color: white;">CONTATO</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#projetos" style="color: white;">PROJETOS</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
         </div>
-        <div class="fundodeverdade">
-            <img src="imagens/fundo.png" alt="">
-        </div>
-        <div class="bemvindo">
-            <p>Formas de contato: <br> Twitter: <a href="https://twitter.com/@fdppgabriel">@fdppgabriel</a> <br> Discord: devpiruleib <br> Youtube: <a href="https://youtube.com/@piruleib">@piruleib</a>
-            </p>
+    <div id="container">
+        <div id="sobremim">
+            <div class="fundo">
+                <div class="sobre">
+                    <div class="imagem1">
+                        <a href="https://pt.wikipedia.org/wiki/Yo%C3%B1lu" target="_blank"><img src="imagens/yonlu.jpg"
+                                class="imagemdoyonlu" alt=""></a>
+                    </div>
+                    <div class="texto1">
+                        <p id="texto">Oi, sou Gabriel. Pode me chamar pelo meu nick piruleib ou por um de meus apelidos do nome
+                            (briel, biel, etc). Eu sou um adolescente de 16 anos que cursa o 2º ano do Ensino Médio. Amo
+                            programação e planejo seguir a área de Ciência da Computação.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+    <div class="bemvindo" id="bemvindo">
+        <h1>Seja bem-vindo ao meu site!</h1>
+        <p>No meu cantinho, eu armazeno meus projetos escolares ou pessoais mesmo. Fique à vontade para explorá-los! ^-^
+        </p>
+    </div>
+
+    <div class="centro" id="quemsou">
+        <h1>QUEM SOU EU?</h1>
+        <p>Gabriel - ou Piruleib - nascido em 2008, sou apaixonado por tecnologia desde quando nasci. <br> Iniciei na programação em meados de 2023, e faço curso de Informática Para Internet na ETEC. <br> Meu objetivo é me profissionalizar nessa área</p>
+    </div>
+    <div class="centro" id="linguagens">
+        <h1>LINGUAGENS QUE PROGRAMO</h1>
+        <p>Estas são as linguagens as quais eu possuo conhecimento ou estou aprendendo!</p>
+        <ul class="linguagens">
+            <li>
+                <i class="fa-brands fa-html5" id="html"></i>
+                <p>HTML</p>
+            </li>
+            <li>
+                <i class="fa-brands fa-css" id="css"></i>
+                <p>CSS</p>
+            </li>
+            <li>
+                <i class="fa-brands fa-square-js" id="js"></i>
+                <p>JavaScript</p>
+            </li>
+            <li>
+                <i class="fa-brands fa-php" id="php"></i>
+                <p>PHP</p>
+            </li>
+            <li>
+                <i class="devicon-csharp-plain" id="csharp"></i>
+                <p>C# (C Sharp)</p>
+            </li>
+        </ul>
+    </div>
+    <div class="centro" id="projetos">
+        <h1>MEUS PROJETOS/PORTFÓLIO</h1>
+        <p>Confira meus projetos no portfólio a seguir!</p>
+        <div class="dropdown-center">
+            <button id="botao" onclick="expandir()" class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              PROJETOS
+            </button>
+            <ul class="dropdown-menu text-bg-dark">
+              <li><a class="dropdown-item text-bg-dark p-2" href="IWII/projetos/site_calculo_imc/">CALCULADORA DE IMC</a></li>
+              <li><a class="dropdown-item text-bg-dark p-2" href="IWII/projetos/calculadora_delta/">CALCULADORA DO DELTA</a></li>
+              <li><a class="dropdown-item text-bg-dark p-2" href="IWII/projetos/login_registro/login.html">SITE DE LOGIN OU REGISTRO (incompleto!!)</a></li>
+            </ul>
+          </div>
+    </div>
+    <div class="centro" id="contato">
+        <p>Formas de contato:
+            <ul class="redes">
+                <li class="redesocial">
+                    <i class="fa-brands fa-x-twitter"></i><a href="https://twitter.com/@fdppgabriel" id="rede">@fdppgabriel</a>
+                </li> 
+                <li class="redesocial">
+                    <i class="fa-brands fa-discord"></i><a href="#" id="rede">devpiruleib</a>
+                </li>
+                <li class="redesocial">
+                    <i class="fa-brands fa-youtube"></i><a href="https://youtube.com/@piruleib" id="rede">@piruleib</a>
+                </li>
+            </ul>
+        </p>
+    </div>
+    </div>
     <script>
-        function paginadocebolinha(){
-            window.location.href = "sites/cebolinhanome/index.html"
-        }
-
-        function pensamentos(){
-            window.location.href = "lobbycpensamento.html"
-        }
-
         console.log("Parabéns, você encontrou o easter egg! Se você encontrou, me manda uma mensagem no discord (devpiruleib) com a mensagem 'cálice'")
+        function expandir(){
+            if(document.getElementById('botao').ariaExpanded === "true"){
+                document.getElementById('projetos').style.height = "430px";
+            }else{
+                document.getElementById('projetos').style.height = "300px";
+            }
+        }
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+        crossorigin="anonymous"></script>
+
 </body>
+
 </html>

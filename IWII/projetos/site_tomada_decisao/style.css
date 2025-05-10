@@ -1,0 +1,63 @@
+@font-face{
+    font-family: montserrat;
+    src: url('Montserrat-VariableFont_wght.ttf')
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: montserrat;
+}
+
+.container{
+    img{
+        height: 150px;
+    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 30px;
+    width: 50%;
+    height: 80vh;
+    margin: 10vh auto;
+    input{
+        height: 40px;
+        width: 500px;
+        padding: 10px;
+        font-weight: bold;
+    }
+
+    button{
+        height: 50px;
+        width: 20%;
+        border-radius: 10px;
+    }
+}
+
+.linha{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+input{
+    border-radius: 10px;
+    border-style: solid;
+}
+
+button{
+    transition: 0.3s;
+    background-color: rgb(114, 114, 173); 
+    color: white;
+    border-style: none;
+    font-size: 30px;
+}
+
+button:hover{
+    background-color: rgb(173, 114, 173);
+    color: white;
+}

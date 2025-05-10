@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>💲Cotação de Moedas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="consumirAPI()">
+    <div class="container">
+        <div class="titulo">
+            <h1>Cotação de Moedas</h1>
+            <h3>Consumindo dados JSON de uma API</h3>
+
+        </div>
+        <div class="moedas">
+            <div class="dol">
+                <p>Cotação do Dólar: <span id="dadosDOL"></span></p>
+                <p>Máxima: <span id="maxdol"></span></p>
+                <p>Mínima: <span id="mindol"></span></p>
+                <p>Data/hora da atualização: <span id="span_datahoradol"></span></p>
+            </div>
+            <div class="eur">
+                <p>Cotação do Euro: <span id="dadosEUR"></span></p>
+                <p>Máxima: <span id="maxeur"></span></p>
+                <p>Mínima: <span id="mineur"></span></p>
+                <p>Data/hora da atualização: <span id="span_datahoraeur"></span></p>
+            </div>
+            <div class="btc">
+                <p>Cotação do Bitcoin: <span id="dadosBTC"></span></p>
+                <p>Máxima: <span id="maxbtc"></span></p>
+                <p>Mínima: <span id="minbtc"></span></p>
+                <p>Data/hora da atualização: <span id="span_datahorabtc"></span></p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

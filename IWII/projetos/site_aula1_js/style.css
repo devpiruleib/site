@@ -1,0 +1,25 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.titulo{
+    background-color: rgb(124, 124, 124);
+    padding: 10px;  
+    display: flex;
+    justify-content: center; 
+}
+
+h1{
+    color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.conteudo{
+    background-color: beige;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+}
