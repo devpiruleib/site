@@ -386,6 +386,16 @@ a {
         display: flex;
     }
 
+    .contato{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #quemsou, #projetos, #linguagens, #contato{
+        overflow: hidden;
+    }
     .nav-item {
     display: none !important;
     }
@@ -403,6 +413,7 @@ a {
         display: flex;
         justify-content: center;
         align-items: center;
+        overflow: hidden;
     }
 
     #html, #css, #php, #js, #csharp, #rede, #twitter, #discord, #yt{
@@ -513,6 +524,10 @@ ul {
     color: white;
     font-size: 30px;
     gap: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
 }
 
 a{
