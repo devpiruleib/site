@@ -385,7 +385,10 @@ a {
         font-size: 20px;
         display: flex;
     }
-
+    .linguagens{
+        display: flex;
+        flex-direction: column !important;
+    }
     .contato{
         display: flex;
         flex-direction: column;
