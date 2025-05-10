@@ -381,94 +381,44 @@ a {
 }
 
 @media (max-width: 768px) {
-    body, html {
-        overflow-x: hidden;
-        background-color: rgb(22, 22, 44) !important;
-    }
-
-    .fundo {
-        width: 100%;
-        margin-top: 20px;
-        padding: 15px;
-    }
-
-    .pcima, .pbaixo,
-    .centro,
-    .portfolio,
-    .botoes {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-    }
-
-    .imagem1, .imagem2, .texto1, .texto2 {
-        flex: 1 1 100%;
-        padding: 10px;
-    }
-
-    .linguagens {
-        flex-direction: column;
-        font-size: 60px;
-        gap: 20px;
-    }
-
-    p {
-        font-size: 16px;
-    }
-
-    #html, #css, #js, #csharp, #php, #rede{
-        font-size: 50px;
+    .navigator{
+        font-size: 20px;
         display: flex;
-        justify-content: center;
     }
 
-    .bemvindo {
-        font-size: 20px;
-        padding: 15px;
+    .nav-item {
+    display: none !important;
     }
 
-    button {
-        font-size: 18px;
-        padding: 8px 16px;
-    }
-
-    .contato {
-        font-size: 20px;
-    }
-
-    .redesocial {
-        font-size: 35px;
-    }
-
-    #rede {
-        font-size: 20px;
-    }
-
-    .navigator,
-    .navbar,
-    .container-fluid {
-        height: auto;
-        padding: 10px;
+    .navbar-nav, .nav-item{
+        display: flex;
         flex-direction: row;
     }
 
-    .portfolio {
-        font-size: 24px;
-        height: auto;
-        padding: 10px;
+    p{
+        font-size: 15px;
     }
 
-    .linguagens {
-        font-size: 60px;
+    .centro{
         display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
-    .navbar-nav{
-        display: flex;
-        flex-direction: row !important;
-        gap: 30px;
+    #html, #css, #php, #js, #csharp, #rede, #twitter, #discord, #yt{
+        font-size: 50px;
     }
+
+    a, #aa{
+        font-size: 15px;
+        text-decoration: none;
+    }
+
+    .redes{
+        gap: 10px;
+    }
+
+    
 }
 
 h1 {
@@ -554,6 +504,22 @@ ul {
 #csharp:hover {
     color: #502ad4;
 }
+
+#twitter, #discord, #yt, #aa{
+    font-size: 30px;
+}
+
+.contato{
+    color: white;
+    font-size: 30px;
+    gap: 10px;
+}
+
+a{
+    color: white !important;
+    text-decoration: none !important;
+}
+
 
 .linguagens {
     list-style-type: none;
