@@ -170,12 +170,16 @@ ul{
     background-color: transparent !important;
 }
 
-#html, #css, #js, #php, #csharp{
+#html, #css, #js, #ts, #php, #csharp{
     transition: 0.5s;
 }
 
 #html:hover{
     color: #e44d25;
+}
+
+#ts:hover{
+    color: #2596be;
 }
 
 #css:hover{
