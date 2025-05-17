@@ -293,6 +293,13 @@ li {
         flex-direction: column;
     }
 
+    h1, p{
+        text-align: center;
+    }
+
+    #linguagens{
+        padding-top: 30px;
+    }
     #linguagens, h1{
         display: flex;
         justify-content: center;
