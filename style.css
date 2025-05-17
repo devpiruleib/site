@@ -15,7 +15,7 @@ body, html {
     height: 100%;
     width: 100%;
     scroll-behavior: smooth;
-    background-color: rgb(22, 22, 44);
+    background-color: rgb(22, 22, 44) !important;
 }
 
 #container {
@@ -109,6 +109,8 @@ button {
 button:hover {
     background-color: rgb(41, 41, 71);
 }
+
+
 
 a {
     color: white !important;
